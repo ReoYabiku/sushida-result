@@ -4,7 +4,7 @@ chrome.runtime.onInstalled.addListener(() => {
     });
 });
 
-const sushidaNet = "https://sushida.net/"
+const sushidaNet = "https://sushida.net/play.html"
 
 chrome.action.onClicked.addListener(async (tab) => {
     if (tab.url.startsWith(sushidaNet)) {

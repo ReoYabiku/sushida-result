@@ -3,9 +3,8 @@
     "name": "sushida result",
     "description": "sushida result to google spread sheet",
     "version": "1.0",
-    "action": {},
-    "background": {
-        "service_worker": "background.js"
+    "action": {
+      "default_popup": "popup.html"
     },
     "permissions": ["activeTab", "scripting"]
 }
