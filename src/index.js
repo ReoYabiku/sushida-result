@@ -13,12 +13,10 @@ chrome.scripting
 			console.log("in the function");
 
 			canvas.toBlob((blob) => {
-				const url = URL.createObjectURL(blob);
-
 				(
 					async () => {
 						const worker = await createWorker('eng');
-						const ret = await worker.recognize(url);
+						const ret = await worker.recognize('https://tesseract.projectnaptha.com/img/eng_bw.png');
 						console.log(ret.data.text);
 						await worker.terminate();
 					}
